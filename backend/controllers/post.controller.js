@@ -16,10 +16,10 @@ export const createPost = async (req, res) => {
 			return res.status(400).json({ error: "Post must have text or image" });
 		}
 
-		if (img) {
-			const uploadedResponse = await cloudinary.uploader.upload(img);
-			img = uploadedResponse.secure_url;
-		}
+		// if (img) {
+		// 	const uploadedResponse = await cloudinary.uploader.upload(img);
+		// 	img = uploadedResponse.secure_url;
+		// }
 
 		const newPost = new Post({
 			user: userId,

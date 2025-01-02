@@ -93,7 +93,7 @@ const LoginPage = () => {
 							value={formData.password}
 						/>
 					</label>
-					<button className='btn rounded-full btn-secondary text-white'>
+					<button className='btn rounded-full  text-white' style={{backgroundColor: "blue"}}  >
 						{isPending ? <LoadingSpinner /> : "Login"}
 					</button>
 					{isError && <p className='text-red-500'>{error.message}</p>}

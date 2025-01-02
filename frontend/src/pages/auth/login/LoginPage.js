@@ -68,7 +68,7 @@ const LoginPage = () => {
 			<div className='flex-1 flex flex-col justify-center items-center'>
 				<form className='flex gap-4 flex-col' onSubmit={handleSubmit}>
 				
-					<h1 className='text-4xl font-extrabold text-white'>{"Let's"} go.</h1>
+				
 					<h1 className='text-4xl font-extrabold text-black'>The Gram</h1>
 					<label className='input input-bordered rounded flex items-center gap-2'>
 					<FaUser />
@@ -93,7 +93,7 @@ const LoginPage = () => {
 							value={formData.password}
 						/>
 					</label>
-					<button className='btn rounded-full btn-primary text-white'>
+					<button className='btn rounded-full btn-secondary text-white'>
 						{isPending ? <LoadingSpinner /> : "Login"}
 					</button>
 					{isError && <p className='text-red-500'>{error.message}</p>}

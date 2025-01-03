@@ -121,7 +121,7 @@ const SignUpPage = () => {
 					{isError && <p className='text-red-500'>{error.message}</p>}
 				</form>
 				<div className='flex flex-col lg:w-2/3 gap-2 mt-4'>
-					<p  style={{color: "black" }} >Already have an account?</p>
+					<p  style={{color: "black" }}>Already have an account?</p>
 					<Link to='/login'>
 						<button className='btn rounded-full text-white btn-outline w-full' style={{backgroundColor: "blue" }}>Sign in</button>
 					</Link>

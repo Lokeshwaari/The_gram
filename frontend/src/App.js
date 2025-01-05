@@ -11,6 +11,7 @@ import { baseUrl } from "../src/constant/url.js";
 import { Toaster } from "react-hot-toast";
 import { useQuery } from "@tanstack/react-query";
 import LoadingSpinner from "./components/common/LoadingSpinner.js";
+import axios from "axios";
 
 function App() {
 	const { data: authUser, isLoading } = useQuery({
@@ -19,7 +20,7 @@ function App() {
 		queryFn: async () => {
 			try {
 				const res = await fetch(`${baseUrl}/api/auth/me`,{
-					method: "GET",
+					method:"GET",
 					credentials: "include",
 					headers : {
 						"Content-Type": "application/json",

@@ -13,7 +13,7 @@ import { FaLink } from "react-icons/fa";
 import { MdEdit } from "react-icons/md";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { formatMemberSinceDate } from "../../utils/date/index.js";
-
+import axios from "axios";
 import useFollow from "../../hooks/useFollow.js";
 import useUpdateUserProfile from "../../hooks/useUpdateUserProfile.js";
 import LoadingSpinner from "../../components/common/LoadingSpinner.js";
@@ -42,7 +42,7 @@ const ProfilePage = () => {
 		queryFn: async () => {
 			try {
 				const res = await fetch(`${baseUrl}/api/users/profile/${username}`,{
-					method: "GET",
+				    method : "GET",
 					credentials : "include",
 					headers: {
 						"Content-Type": "application/json",

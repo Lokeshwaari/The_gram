@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import {baseUrl} from "../../constant/url.js"
 import useFollow from "../../hooks/useFollow.js";
-
+import axios from "axios";
 import RightPanelSkeleton from "../skeletons/RightPanelSkeleton.js";
 import LoadingSpinner from "./LoadingSpinner.js";
 
@@ -13,7 +13,7 @@ const RightPanel = () => {
 		queryFn: async () => {
 			try {
 				const res = await fetch(`${baseUrl}/api/users/suggested` , {
-					method : "GET",
+				    method:"GET",
 					credentials: "include",
 					headers : {
 						"Content-Type": "application/json",

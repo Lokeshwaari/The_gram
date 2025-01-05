@@ -3,6 +3,8 @@ import PostSkeleton from "../skeletons/PostSkeleton.js";
 import { useQuery } from "@tanstack/react-query";
 import { useEffect } from "react";
 import {baseUrl} from "../../constant/url.js";
+import axios from "axios";
+
 const Posts = ({ feedType, username, userId }) => {
 	//const isLoading= false;
 	const getPostEndpoint = () => {

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
+import axios from "axios";
 //import XSvg from "../../../components/svgs/X";
 
 import { FaUser } from "react-icons/fa";

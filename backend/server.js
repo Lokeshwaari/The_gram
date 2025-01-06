@@ -21,7 +21,11 @@ cloudinary.config({
 })
 
 app.use(cors({
+<<<<<<< HEAD
     origin :"https://the-gram-frontend-mrvj.onrender.com",
+=======
+
+>>>>>>> e1e065eb7eefaa67c015171bf9e9380ba9b7f1a4
     credentials: true 
 }))
 

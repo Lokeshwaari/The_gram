@@ -21,7 +21,7 @@ cloudinary.config({
 })
 
 app.use(cors({
-    origin : ['http://localhost:3000', 'https://the-gram-frontend-mrvj.onrender.com'],
+    origin : "https://the-gram-frontend-mrvj.onrender.com",
     credentials: true 
 }))
 

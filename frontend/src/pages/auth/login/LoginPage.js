@@ -30,15 +30,18 @@ const LoginPage = () => {
 					credentials : "include",
 					headers: {
 						"Content-Type": "application/json",
+					
+						"Accept" : "application/json"
 					},
 					body: JSON.stringify({ username, password }),
 				});
 
 				const data = await res.json();
 
-				if (!res.ok) {
+				if (!res.ok) 
 					throw new Error(data.error || "Something went wrong");
-				}
+					localStorage.setItem("token", data?.token)
+				
 			} catch (error) {
 				throw new Error(error);
 			}

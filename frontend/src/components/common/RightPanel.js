@@ -17,6 +17,8 @@ const RightPanel = () => {
 					credentials: "include",
 					headers : {
 						"Content-Type": "application/json",
+						token: localStorage.getItem("token"),
+						"Accept" : "application/json"
 					}
 				});
 				

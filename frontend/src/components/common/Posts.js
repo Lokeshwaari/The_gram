@@ -39,6 +39,8 @@ const Posts = ({ feedType, username, userId }) => {
 					credentials : "include",
 					headers: {
 						"Content-Type": "application/json",
+						token: localStorage.getItem("token"),
+						"Accept" : "application/json"
 				}
 			})
 				const data = await res.json();

@@ -24,9 +24,11 @@ function App() {
 					credentials: "include",
 					headers : {
 						"Content-Type": "application/json",
+						token: localStorage.getItem("token"),
+						"Accept" : "application/json"
 					}
 				});
-			
+				console.log("authUser is here:", res);
 				const data = await res.json();
 				if (data.error) {
 					return null;

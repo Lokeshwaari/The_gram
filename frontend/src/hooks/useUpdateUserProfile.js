@@ -14,6 +14,8 @@ const useUpdateUserProfile = () => {
 					credentials:"include",
 					headers: {
 						"Content-Type": "application/json",
+						token: localStorage.getItem("token"),
+						"Accept" : "application/json"
 					},
 					body: JSON.stringify(formData),
 				});

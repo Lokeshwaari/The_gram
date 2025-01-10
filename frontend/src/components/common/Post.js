@@ -31,6 +31,8 @@ const Post = ({ post }) => {
 					credentials : "include",
 					headers: {
 						"Content-Type": "application/json",
+						token: localStorage.getItem("token"),
+						"Accept" : "application/json"
 					},
 				});
 				const data = await res.json();
@@ -57,6 +59,8 @@ const Post = ({ post }) => {
 					credentials : "include",
 					headers: {
 						"Content-Type": "application/json",
+						token: localStorage.getItem("token"),
+						"Accept" : "application/json"
 					},
 				});
 				const data = await res.json();
@@ -95,6 +99,8 @@ const Post = ({ post }) => {
 					credentials: "include",
 					headers: {
 						"Content-Type": "application/json",
+						token: localStorage.getItem("token"),
+						"Accept" : "application/json"
 					},
 					body: JSON.stringify({ text: comment }),
 				});

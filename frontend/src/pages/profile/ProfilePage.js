@@ -46,12 +46,15 @@ const ProfilePage = () => {
 					credentials : "include",
 					headers: {
 						"Content-Type": "application/json",
+						token: localStorage.getItem("token"),
+						"Accept" : "application/json"
 					},
 				});
 				const data = await res.json();
-				if (!res.ok) {
+				if (!res.ok) 
 					throw new Error(data.error || "Something went wrong");
-				}
+					
+				
 				return data;
 			} catch (error) {
 				throw new Error(error);

@@ -39,6 +39,7 @@ const EditProfileModal = ({  }) => {
 	return (
 		<>
 			<button
+			style={{backgroundColor: "blue" }}
 				className='btn btn-outline rounded-full btn-sm'
 				onClick={() => document.getElementById("edit_profile_modal").showModal()}
 			>
@@ -46,7 +47,7 @@ const EditProfileModal = ({  }) => {
 			</button>
 			<dialog id='edit_profile_modal' className='modal'>
 				<div className='modal-box border rounded-md border-gray-700 shadow-md'>
-					<h3 className='font-bold text-lg my-3'>Update Profile</h3>
+					<h3 style={{backgroundColor: "blue" }} className='font-bold text-lg my-3'>Update Profile</h3>
 					<form
 						className='flex flex-col gap-4'
 						onSubmit={(e) => {

@@ -116,7 +116,7 @@ const EditProfileModal = ({  }) => {
 							name='link'
 							onChange={handleInputChange}
 						/>
-						<button style={{backgroundColor: "blue" }} className='btn btn-primary rounded-full btn-sm text-white'>
+						<button style="backgroundColor: blue"  className='btn btn-primary rounded-full btn-sm text-white'>
 							{isUpdatingProfile && <LoadingSpinner size="sm" />}
 							{!isUpdatingProfile && "update"}
 

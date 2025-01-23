@@ -5,7 +5,7 @@ import { toast } from "react-hot-toast";
 
 import LoadingSpinner from "../../components/common/LoadingSpinner.js";
 import {baseUrl} from "../../constant/url.js";
-import { IoSettingsOutline } from "react-icons/io5";
+import { IoArchiveOutline } from "react-icons/io5";
 import { FaUser } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa6";
 import axios from "axios";
@@ -72,7 +72,7 @@ const NotificationPage = () => {
 					<p className='font-bold'>Notifications</p>
 					<div className='dropdown '>
 						<div tabIndex={0} role='button' className='m-1'>
-						<RiDeleteBin4Line />
+						<IoArchiveOutline />
 						</div>
 						
 							

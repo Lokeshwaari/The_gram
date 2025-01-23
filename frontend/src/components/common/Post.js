@@ -141,16 +141,15 @@ const Post = ({ post }) => {
 
 	const profileImage = {
 		borderRadius: "50%",
-		width: "200px",
-		height: "200px" 
+		 
 	   }
 
 
 	return (
 		<>
 			<div className='flex gap-2 items-start p-4 border-b border-gray-700'>
-				<div className='avatar' style={profileImage}>
-					<Link to={`/profile/${postOwner.username}`} style={profileImage} className='w-8 rounded-full overflow-hidden'>
+				<div className='avatar' style={{profileImage, width: "200px", height: "200px"}}>
+					<Link to={`/profile/${postOwner.username}`}  className='w-8 rounded-full overflow-hidden'>
 						<img src={postOwner.profileImg ||"/avatar-placeholder.png"} alt="" />
 					</Link>
 				</div>
@@ -179,7 +178,6 @@ const Post = ({ post }) => {
 						{post.img && (
 							<img
 								src={post.img}
-								style={profileImage}
 								className='h-80 object-contain rounded-lg border border-gray-700'
 								alt=''
 							/>

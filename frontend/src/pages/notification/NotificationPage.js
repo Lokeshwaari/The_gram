@@ -72,16 +72,12 @@ const NotificationPage = () => {
 					<p className='font-bold'>Notifications</p>
 					<div className='dropdown '>
 						<div tabIndex={0} role='button' className='m-1'>
-							<IoSettingsOutline className='w-4' />
+						<RiDeleteBin4Line />
 						</div>
-						<ul
-							tabIndex={0}
-							className='dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52'
-						>
-							<li>
+						
+							
 								<a onClick={deleteNotifications}>Delete all notifications</a>
-							</li>
-						</ul>
+						
 					</div>
 				</div>
 				{isLoading && (

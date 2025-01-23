@@ -141,7 +141,6 @@ const Post = ({ post }) => {
 
 	const profileImage = {
 		borderRadius: "50%",
-		 
 	   }
 
 

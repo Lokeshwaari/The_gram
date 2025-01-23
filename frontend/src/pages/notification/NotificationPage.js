@@ -72,7 +72,7 @@ const NotificationPage = () => {
 					<p className='font-bold'>Notifications</p>
 					<div className='dropdown '>
 						<div tabIndex={0} role='button' className='m-1'>
-							<button style={ {display: "flex", backgroundColor:"lighten(red, 48%)", alignItems:"center",  padding: "0 24px 0 16px", height: "48px",borderRadius: "24px"}}>
+							<button style={ {display: "flex", backgroundColor:"#ff000075", alignItems:"center",  padding: "0 24px 0 16px", height: "48px",borderRadius: "24px"}}>
 						<IoArchiveOutline />
 						
 							<a onClick={deleteNotifications}>Delete all</a></button>

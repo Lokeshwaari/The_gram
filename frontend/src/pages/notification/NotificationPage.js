@@ -75,7 +75,7 @@ const NotificationPage = () => {
 							<button style={{backgroundColor:"red", color:"white"}}>
 						<IoArchiveOutline />
 						
-							<as onClick={deleteNotifications}>Delete all</a></button>
+							<a onClick={deleteNotifications}>Delete all</a></button>
 							</div>
 					</div>
 					

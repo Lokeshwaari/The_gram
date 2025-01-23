@@ -57,11 +57,7 @@ const EditProfileModal = ({  }) => {
 			</button>
 			<dialog id='edit_profile_modal' className='modal'>
 				<div className='modal-box border rounded-md border-gray-700 shadow-md'>
-<<<<<<< HEAD
 					<h3 style={buttonStyle} className='font-bold text-lg my-3'>Update </h3>
-=======
-					<h3 style="backgroundColor:blue" className='font-bold text-lg my-3'>Update</h3>
->>>>>>> 84c57c09b9b769a9f4bd7bc80fc05e64c30dfe2c
 					<form
 						className='flex flex-col gap-4'
 						onSubmit={(e) => {
@@ -130,11 +126,7 @@ const EditProfileModal = ({  }) => {
 							name='link'
 							onChange={handleInputChange}
 						/>
-<<<<<<< HEAD
 						<button style={buttonStyle} className='btn btn-primary rounded-full btn-sm text-white'>
-=======
-						
->>>>>>> 84c57c09b9b769a9f4bd7bc80fc05e64c30dfe2c
 							{isUpdatingProfile && <LoadingSpinner size="sm" />}
 							{!isUpdatingProfile && "update"}
 

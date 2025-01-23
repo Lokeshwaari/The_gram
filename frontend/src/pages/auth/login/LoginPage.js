@@ -62,6 +62,16 @@ const LoginPage = () => {
 		setFormData({ ...formData, [e.target.name]: e.target.value });
 	};
 
+	const buttonStyle = {
+		backgroundColor: "blue",
+		color: "white",
+		padding: "10px 20px",
+		border: "none",
+		borderRadius: "5px",
+		cursor: "pointer",
+	  };
+
+
 	return (
 		<div className='max-w-screen-xl mx-auto flex h-screen'>
 			<div className='flex-1 hidden lg:flex items-center  justify-center'>
@@ -96,7 +106,7 @@ const LoginPage = () => {
 							value={formData.password}
 						/>
 					</label>
-					<button className='btn rounded-full  text-white' style={{backgroundColor: "blue" }}  >
+					<button style={buttonStyle} className='btn rounded-full  text-white'  >
 						{isPending ? <LoadingSpinner /> : "Login"}
 					</button>
 					{isError && <p className='text-red-500'>{error.message}</p>}
@@ -104,7 +114,7 @@ const LoginPage = () => {
 				<div className='flex flex-col gap-2 mt-4'>
 					<p style={{color: "black" }} > Don't have an account </p>
 					<Link to='/signup'>
-						<button className='btn rounded-full text-white btn-outline w-full' style={{backgroundColor: "blue" }}>Sign up</button>
+						<button style={buttonStyle} className='btn rounded-full text-white btn-outline w-full' >Sign up</button>
 					</Link>
 				</div>
 			</div>

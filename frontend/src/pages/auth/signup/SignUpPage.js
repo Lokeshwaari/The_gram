@@ -61,6 +61,16 @@ const SignUpPage = () => {
 		setFormData({ ...formData, [e.target.name]: e.target.value });
 	};
 
+	const buttonStyle = {
+		backgroundColor: "blue",
+		color: "white",
+		padding: "10px 20px",
+		border: "none",
+		borderRadius: "5px",
+		cursor: "pointer",
+	  };
+
+
 	return (
 		<div className='max-w-screen-xl mx-auto flex h-screen px-10'>
 			<div className='flex-1 hidden lg:flex items-center  justify-center'>
@@ -124,7 +134,7 @@ const SignUpPage = () => {
 				<div className='flex flex-col lg:w-2/3 gap-2 mt-4'>
 					<p  style={{color: "black" }}>Already have an account?</p>
 					<Link to='/login'>
-						<button className='btn rounded-full text-white btn-outline w-full' style={{backgroundColor: "blue" }}>Sign in</button>
+						<button className='btn rounded-full text-white btn-outline w-full' style={buttonStyle}>Sign in</button>
 					</Link>
 				</div>
 			</div>

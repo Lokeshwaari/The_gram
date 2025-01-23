@@ -171,7 +171,8 @@ const ProfilePage = () => {
 									</button>
 								)}
 								{(coverImg || profileImg) && (
-									<button
+									<button 
+									style={buttonStyle}
 										className='btn btn-primary rounded-full btn-sm text-white px-4 ml-2'
 										onClick={async () => 
 											{

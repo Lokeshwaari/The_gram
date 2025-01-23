@@ -57,7 +57,7 @@ const EditProfileModal = ({  }) => {
 			</button>
 			<dialog id='edit_profile_modal' className='modal'>
 				<div className='modal-box border rounded-md border-gray-700 shadow-md'>
-					<h3 className='font-bold text-lg my-3'>Update </h3>
+					<h3 className='font-bold text-lg my-3'>Update Profile</h3>
 					<form
 						className='flex flex-col gap-4'
 						onSubmit={(e) => {

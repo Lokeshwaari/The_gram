@@ -15,6 +15,7 @@ const Sidebar = () => {
 	const { mutate: logout } = useMutation({
 		mutationFn: async () => {
 			try {
+				localStorage.clear();
 				const res = await fetch(`${baseUrl}/api/auth/logout`, {
 					method:"POST",
 					credentials : "include",

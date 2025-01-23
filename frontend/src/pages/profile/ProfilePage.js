@@ -84,6 +84,14 @@ const ProfilePage = () => {
 		refetch();
 	}, [username, refetch]);
 
+	const buttonStyle = {
+		backgroundColor: "blue",
+		color: "white",
+		padding: "10px 20px",
+		border: "none",
+		borderRadius: "10px",
+		cursor: "pointer",
+	  };
 
 
 	return (
@@ -153,6 +161,7 @@ const ProfilePage = () => {
 								{isMyProfile && <EditProfileModal authUser={authUser} />}
 								{!isMyProfile && (
 									<button
+									style={buttonStyle} 
 										className='btn btn-outline rounded-full btn-sm'
 										onClick={() => follow(user?._id)}
 									>
